@@ -12,7 +12,8 @@ export const GlobalStyles = createGlobalStyle`
   
   body {
     background-color: ${myTheme.colors.body};
-    font-family: ${myTheme.fontFamily.basic}
+    font-family: "Inter", sans-serif;
+    
     margin: 0;
     //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     //'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

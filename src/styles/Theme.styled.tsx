@@ -1,10 +1,12 @@
 export const myTheme = {
     colors: {
         primary: '#fff',
-        secondary: 's',
-        body: '#F5F5F5'
+        secondary: '#000',
+        body: '#F5F5F5',
+        text: '#abb3ba',
+        button: '#4e71fe'
     },
-    fontFamily: {
+    /*fontFamily: {
         basic: '"Inter", sans-serif'
-    }
+    }*/
 }

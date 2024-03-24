@@ -12,14 +12,16 @@ function App() {
             <Container>
                 <Box>
                     <Img src={rectangle} alt={'Rectangle'}/>
-                    <Wrapper>
-                    <Title>Headline</Title>
-                    <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
-                    <Button>See more</Button>
-                    <Form>
-                        <Input type={'submit'} value={'Save'}/>
-                    </Form>
-                    </Wrapper>
+                    <WrapperContent>
+                        <Title>Headline</Title>
+                        <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
+                        <WrapperBtn>
+                            <Button>See more</Button>
+                            <Form>
+                                <Input type={'submit'} value={'Save'}/>
+                            </Form>
+                        </WrapperBtn>
+                    </WrapperContent>
                 </Box>
             </Container>
         </div>
@@ -46,28 +48,45 @@ const Box = styled.div`
   border-radius: 15px;
 `
 const Img = styled.img`
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 `
 
-const Wrapper = styled.div`
+const WrapperContent = styled.div`
   width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `
 
-
-
 const Title = styled.h1`
-
+  font-size: 16px;
+  font-weight: 700;
+  color: ${myTheme.colors.secondary};
+  margin-bottom: 20px;
 `
 
 const Text = styled.p`
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+  color: ${myTheme.colors.text};
+  margin-bottom: 19px;
+`
 
+const WrapperBtn = styled.div`
+  display: flex;
+  gap: 12px;
 `
 
 const Button = styled.button`
-
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 200%;
+  color: ${myTheme.colors.primary};
+  background-color: ${myTheme.colors.button};
+  border: 2px solid ${myTheme.colors.button};
+  border-radius: 5px;
+  padding: 5px 20px;
 `
 
 const Form = styled.form`
@@ -75,5 +94,5 @@ const Form = styled.form`
 `
 
 const Input = styled.input`
-    
-    `
+
+`
