@@ -8,8 +8,7 @@ import {WrapperContent} from './components/WrapperContent/WrapperContent.styled'
 import {Title} from './components/WrapperContent/Title.styled';
 import {Text} from './components/WrapperContent/Text.styled';
 import {WrapperBtn} from './components/WrapperContent/WrapperBtn/WrapperBtn.styled';
-import {Button} from './components/WrapperContent/WrapperBtn/Button.styled';
-import {Form, Input} from './components/WrapperContent/WrapperBtn/Form.styled';
+import {Button, ButtonSave} from './components/WrapperContent/WrapperBtn/Button.styled';
 
 function App() {
     return (
@@ -21,37 +20,39 @@ function App() {
                         <Title>Headline</Title>
                         <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
                         <WrapperBtn>
-                            <Button>See more</Button>
-                            <Form>
-                                <Input type={'submit'} value={'Save'}/>
-                            </Form>
+                            <Button type={'button'}>See more</Button>
+                            <ButtonSave  type={'submit'}>Save</ButtonSave>
                         </WrapperBtn>
                     </WrapperContent>
                 </Box>
             </Container>
         </div>
-    );
+);
 }
 
 export default App;
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 `
 
 const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 350px;
-  background-color: ${myTheme.colors.primary};
-  border-radius: 15px;
-  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 300px;
+height: 350px;
+background-color: ${
+    myTheme.colors.primary
+};
+border-radius: 15px;
+box-shadow: 0 4px 20px 5px ${
+    myTheme.colors.box
+};
 `
 
 
