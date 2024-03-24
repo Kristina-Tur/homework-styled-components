@@ -3,6 +3,13 @@ import './App.css';
 import styled from 'styled-components';
 import {myTheme} from './styles/Theme.styled';
 import rectangle from './assets/images/rectangle-1.png'
+import {Img} from './components/Img.styled';
+import {WrapperContent} from './components/WrapperContent/WrapperContent.styled';
+import {Title} from './components/WrapperContent/Title.styled';
+import {Text} from './components/WrapperContent/Text.styled';
+import {WrapperBtn} from './components/WrapperContent/WrapperBtn/WrapperBtn.styled';
+import {Button} from './components/WrapperContent/WrapperBtn/Button.styled';
+import {Form, Input} from './components/WrapperContent/WrapperBtn/Form.styled';
 
 function App() {
     return (
@@ -47,58 +54,13 @@ const Box = styled.div`
   box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
 `
 
-const Img = styled.img`
-  margin-bottom: 20px;
-`
 
-const WrapperContent = styled.div`
-  width: 260px;
-`
 
-const Title = styled.h1`
-  font-size: 16px;
-  font-weight: 700;
-  color: ${myTheme.colors.secondary};
-  margin-bottom: 20px;
-`
 
-const Text = styled.p`
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 167%;
-  color: ${myTheme.colors.text};
-  margin-bottom: 19px;
-`
 
-const WrapperBtn = styled.div`
-  display: flex;
-  gap: 12px;
-  margin-bottom: 8px;
-`
 
-const Button = styled.button`
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 200%;
-  color: ${myTheme.colors.primary};
-  background-color: ${myTheme.colors.button};
-  border: 2px solid ${myTheme.colors.button};
-  border-radius: 5px;
-  padding: 5px 20px;
-  cursor: pointer;
-`
 
-const Form = styled.form`
-`
 
-const Input = styled.input`
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 200%;
-  color: ${myTheme.colors.button};
-  background-color: ${myTheme.colors.primary};
-  border: 2px solid ${myTheme.colors.button};
-  border-radius: 5px;
-  padding: 5px 30px;
-  cursor: pointer;
-`
+
+
+
