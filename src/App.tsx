@@ -3,8 +3,6 @@ import './App.css';
 import styled from 'styled-components';
 import {myTheme} from './styles/Theme.styled';
 import rectangle from './assets/images/rectangle-1.png'
-import {Simulate} from 'react-dom/test-utils';
-import submit = Simulate.submit;
 
 function App() {
     return (
@@ -32,9 +30,9 @@ export default App;
 
 const Container = styled.div`
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 `
 
 const Box = styled.div`
@@ -46,16 +44,15 @@ const Box = styled.div`
   height: 350px;
   background-color: ${myTheme.colors.primary};
   border-radius: 15px;
+  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
 `
+
 const Img = styled.img`
   margin-bottom: 20px;
 `
 
 const WrapperContent = styled.div`
   width: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `
 
 const Title = styled.h1`
@@ -76,6 +73,7 @@ const Text = styled.p`
 const WrapperBtn = styled.div`
   display: flex;
   gap: 12px;
+  margin-bottom: 8px;
 `
 
 const Button = styled.button`
@@ -87,12 +85,20 @@ const Button = styled.button`
   border: 2px solid ${myTheme.colors.button};
   border-radius: 5px;
   padding: 5px 20px;
+  cursor: pointer;
 `
 
 const Form = styled.form`
-
 `
 
 const Input = styled.input`
-
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 200%;
+  color: ${myTheme.colors.button};
+  background-color: ${myTheme.colors.primary};
+  border: 2px solid ${myTheme.colors.button};
+  border-radius: 5px;
+  padding: 5px 30px;
+  cursor: pointer;
 `
